@@ -1,0 +1,135 @@
+.header {
+  background-color: #fbfbfb;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //width: 535px;
+  width: 45.6%;
+}
+
+.header__logo-image {
+  width: 141px;
+  height: 60px;
+}
+
+.header__toggle {
+  display: none;
+}
+
+.header__right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  //width: 370px;
+  width: 31.9%;
+}
+
+.header__phone {
+  //width: 170px;
+  width: 46%;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.header__button {
+  margin-top: -7px;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  //width: 191px;
+  width: 52%;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+}
+
+@media (min-width: $mobile-width) and (max-width: $desktop-width) {
+  .header__wrapper {
+    position: relative;
+    padding: 8px 8%;
+  }
+
+  .header__left {
+    //width: 150px;
+    width: 23.4%;
+  }
+
+  .header__logo-image {
+    width: 86px;
+    height: 37px;
+  }
+
+  .header__right {
+    //width: 124px;
+    white-space: nowrap;
+    width: 19.4%;
+  }
+
+  .header__toggle {
+    display: block;
+    position: relative;
+    width: 26px;
+    height: 31px;
+    background-color: #fbfbfb;
+    cursor: pointer;
+    border: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 26px;
+      height: 2px;
+      box-shadow: 0 3px 0 0 rgba(56, 56, 56, 0.3), 0 13px 0 0 rgba(56, 56, 56, 0.3), 0 22px 0 0 rgba(56, 56, 56, 0.3);
+    }
+  }
+
+  .header__phone {
+    //width: 124px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .header__button {
+    display: none;
+  }
+}
+
+@media (min-width: $mobile-width)  and (max-width: $tablet-width) {
+  .header__wrapper {
+    padding: 7px 20px;
+  }
+
+  .header__left {
+    width: 100%;
+  }
+
+  .header__right {
+    display: none;
+  }
+
+  .header__toggle {
+    width: 18px;
+    height: 25px;
+
+    &::before {
+      width: 18px;
+      box-shadow: 0 2px 0 0 rgba(56, 56, 56, 0.3), 0 8px 0 0 rgba(56, 56, 56, 0.3), 0 14px 0 0 rgba(56, 56, 56, 0.3);
+    }
+  }
+}
+

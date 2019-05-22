@@ -1,0 +1,28 @@
+.nav {
+  //width: 335px;
+  width: 62.6%;
+}
+
+@media (min-width: $mobile-width) and (max-width: $desktop-width) {
+  .nav {
+    position: absolute;
+    display: none;
+    top: 50px;
+    left: 0;
+    width: 207px;
+
+    &--show {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $mobile-width)  and (max-width: $tablet-width) {
+  .nav {
+    position: absolute;
+    top: 49px;
+    width: 100%;
+  }
+}
+
+

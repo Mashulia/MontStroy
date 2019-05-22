@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MontStroy</title>
+  <link rel="preload" href="fonts/roboto/Roboto.woff" as="font">
+  <link rel="preload" href="fonts/roboto/Roboto.woff2" as="font">
+  <link rel="preload" href="fonts/roboto/Robotomedium.woff" as="font">
+  <link rel="preload" href="fonts/roboto/Robotomedium.woff2" as="font">
+  <link rel="preload" href="fonts/roboto/Robotobold.woff" as="font">
+  <link rel="preload" href="fonts/roboto/Robotobold.woff2" as="font">
+  <link rel="preload" href="fonts/roboto/Robotoblack.woff" as="font">
+  <link rel="preload" href="fonts/roboto/Robotoblack.woff2" as="font">
+  <link rel="preload" href="fonts/raleway/ralewayblack.woff" as="font">
+  <link rel="preload" href="fonts/raleway/ralewayblack.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/picturefill.js"></script>
+</head>
+<body>
+  <header class="header container">
+    <div class="header__left">
+      <picture class="header__logo">
+        <source type="image/webp" media="(min-width: 1200px)" srcset="img/montstroy-logo-desktop@1x.webp 1x, img/montstroy-logo-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/montstroy-logo-tablet@1x.webp 1x, img/montstroy-logo-tablet@2x.webp 2x">
+        <source media="(min-width: 1200px)" srcset="img/montstroy-logo-desktop@1x.png 1x, img/montstroy-logo-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/montstroy-logo-tablet@1x.png 1x, img/montstroy-logo-tablet@2x.png 2x">
+        <img class="header__logo-image" src="img/montstroy-logo-tablet@1x.png" srcset="img/montstroy-logo-tablet@2x.png 2x" alt="Логотип МонтСтрой">
+      </picture>
+      <div class="header__toggle">
+        <span class="visually-hidden">Открыть меню</span>
+      </div>
+      <nav class="header__nav nav">
+        <ul class="nav__list nav-list">
+          <li class="nav-list__item"><a href="#banner">Главная</a></li>
+          <li class="nav-list__item"><a href="#services">Услуги</a></li>
+          <li class="nav-list__item"><a href="#projects">Проекты</a></li>
+          <li class="nav-list__item"><a href="#partners">Партнеры</a></li>
+          <li class="nav-list__item"><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__right">
+      <a class="header__phone" href="tel: +74954526723">+7 (495) 452-67-23</a>
+      <a class="header__button button button--active" href="#form">Обратная связь</a>
+    </div>
+  </header>
+</body>
+</html>

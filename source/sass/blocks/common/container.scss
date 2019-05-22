@@ -1,0 +1,19 @@
+.container {
+  width: $desktop-width;
+  margin: 0 auto;
+  @include indents-desktop();
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .container {
+    width: $tablet-width;
+    @include indents-tablet();
+  }
+}
+
+@media (min-width: $mobile-width)  and (max-width: $tablet-width) {
+  .container {
+    width: $mobile-width;
+    @include indents-mobile();
+  }
+}
