@@ -14,11 +14,11 @@
 
 .nav-list__item a {
   font: inherit;
-  color: #707070;
+  color: $menu-color;
 
   &:hover,
   &focus {
-    color: #000000;
+    color: $black-color;
   }
 }
 
@@ -30,7 +30,7 @@
     font-size: 12px;
     line-height: 19px;
     font-weight: 400;
-    background-color: #e7e7e7;
+    background-color: $gray-color;
   }
 
   .nav-list__item {
@@ -46,7 +46,7 @@
   }
 
   .nav-list__item a {
-    color: #383838;
+    color: $menu-popup-color;
   }
 }
 
@@ -56,4 +56,3 @@
     width: 100%;
   }
 }
-

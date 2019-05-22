@@ -1,5 +1,5 @@
 .header {
-  background-color: #fbfbfb;
+  background-color: $gray-light;
 }
 
 .header__wrapper {
@@ -41,7 +41,7 @@
   width: 46%;
   font-size: 18px;
   font-weight: 700;
-  color: #000000;
+  color: $black-color;
 }
 
 .header__button {
@@ -53,7 +53,7 @@
   height: 45px;
   font-size: 16px;
   font-weight: 700;
-  color: #000000;
+  color: $black-color;
 }
 
 @media (min-width: $mobile-width) and (max-width: $desktop-width) {
@@ -83,7 +83,7 @@
     position: relative;
     width: 26px;
     height: 31px;
-    background-color: #fbfbfb;
+    background-color: $gray-light;
     cursor: pointer;
     border: none;
 
@@ -132,4 +132,3 @@
     }
   }
 }
-
