@@ -8,49 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-@font-face {
-  font-family: "Roboto";
-  font-weight: 400;
-  src: url("../fonts/roboto/Roboto.woff2") format("woff2"), url("../fonts/roboto/Roboto.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: 500;
-  src: url("../fonts/roboto/Robotomedium.woff2") format("woff2"), url("../fonts/roboto/Robotomedium.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: 700;
-  src: url("../fonts/roboto/Robotobold.woff2") format("woff2"), url("../fonts/roboto/Robotobold.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: 900;
-  src: url("../fonts/roboto/Robotoblack.woff2") format("woff2"), url("../fonts/roboto/Robotoblack.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Raleway";
-  font-weight: 900;
-  src: url("../fonts/raleway/ralewayblack.woff2") format("woff2"), url("../fonts/raleway/ralewayblack.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Circle";
-  font-weight: 400;
-  src: url("../fonts/circle/circle.woff2") format("woff2"), url("../fonts/circle/circle.woff") format("woff");
-  font-display: swap;
-}
-
-
 body {
   margin: 0 auto;
   padding: 0;
