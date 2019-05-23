@@ -1,0 +1,70 @@
+.features {
+  position: absolute;
+  top: 790px;
+  left: 51%;
+  width: 1200px;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include reset-list();
+}
+
+
+.features__item {
+  position: relative;
+  padding-top: 90px;
+  color: $white-color;
+  opacity: 0.6;
+  text-align: center;
+
+  &--guarantee {
+    width: 16.6%;
+    margin-right: 23.5%;
+  }
+
+  &--responsibility  {
+    width: 16.6%;
+  }
+
+  &--base {
+    width: 22.5%;
+    margin-left: auto;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &--guarantee::before {
+    background-image: url("../../../img/like.svg");
+    top: 0;
+    left: 35%;
+    width: 62px;
+    height: 64px;
+  }
+
+  &--responsibility::before {
+    background-image: url("../../../img/handshake.svg");
+    top: 17px;
+    left: 32%;
+    width: 74px;
+    height: 49px;
+  }
+
+  &--base::before {
+    background-image: url("../../../img/settings.svg");
+    top: -4px;
+    left: 38%;
+    width: 70px;
+    height: 69px;
+  }
+}

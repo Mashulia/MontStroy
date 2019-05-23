@@ -1,0 +1,63 @@
+.about-us {
+  color: #fffffe;
+  min-height: 935px;
+  background-color: $black-color;
+  background-image: url("../../../img/background-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: auto;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  background-image: url("../../../img/background-desktop@2x.jpg");
+}
+
+.about-us__title {
+  @include reset-indents();
+  padding-top: 150px;
+  margin-bottom: 23px;
+  font-family: $font-header;
+  font-size: 72px;
+  line-height: 86px;
+  letter-spacing: 3px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.about-us__short-text {
+  display: none;
+}
+
+.about-us__full-text {
+  @include reset-indents();
+  margin-bottom: 52px;
+  width: 1017px;
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 500;
+}
+
+.about-us__year {
+  color: $main-color;
+}
+
+.about-us__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 620px;
+}
+
+.about-us__button {
+  padding: 15px;
+  width: 300px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 900;
+  color: $black-color;
+  text-transform: uppercase;
+
+  &--connection {
+    color: $white-color;
+    border: 1px solid rgb(151, 255, 244);
+  }
+}
