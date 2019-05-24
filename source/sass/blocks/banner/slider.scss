@@ -3,7 +3,7 @@
   display: none;
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media (max-width: $desktop-width) {
   .slider {
     position: absolute;
     display: flex;
@@ -30,9 +30,9 @@
     margin: 3px;
   }
 
-  .features__input--1:checked ~ .slider >.slider__label[for="btn-1"],
-  .features__input--2:checked ~ .slider >.slider__label[for="btn-2"],
-  .features__input--3:checked ~ .slider >.slider__label[for="btn-3"] {
+  .features__input--1:checked ~ .slider > .slider__label[for="btn-1"],
+  .features__input--2:checked ~ .slider > .slider__label[for="btn-2"],
+  .features__input--3:checked ~ .slider > .slider__label[for="btn-3"] {
     background-color: $main-color;
   }
 
@@ -64,7 +64,7 @@
   }
 }
 
-@media (min-width: $mobile-width)  and (max-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .slider {
     position: absolute;
     display: flex;
@@ -91,9 +91,9 @@
     margin: 3px;
   }
 
-  .features__input--1:checked ~ .slider >.slider__label[for="btn-1"],
-  .features__input--2:checked ~ .slider >.slider__label[for="btn-2"],
-  .features__input--3:checked ~ .slider >.slider__label[for="btn-3"] {
+  .features__input--1:checked ~ .slider > .slider__label[for="btn-1"],
+  .features__input--2:checked ~ .slider > .slider__label[for="btn-2"],
+  .features__input--3:checked ~ .slider > .slider__label[for="btn-3"] {
     width: 8px;
     height: 8px;
     background-color: $main-color;

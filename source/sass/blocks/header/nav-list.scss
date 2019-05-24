@@ -22,7 +22,7 @@
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: $desktop-width) {
+@media (max-width: $desktop-width) {
   .nav-list {
     flex-direction: column;
     width: 207px;
@@ -51,7 +51,7 @@
 }
 
 
-@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .nav-list {
     width: 100%;
   }

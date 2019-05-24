@@ -52,7 +52,7 @@
   color: $black-color;
 }
 
-@media (min-width: $mobile-width) and (max-width: $desktop-width) {
+@media (max-width: $desktop-width) {
   .header__wrapper {
     position: relative;
     padding-top: 8px;
@@ -103,7 +103,7 @@
   }
 }
 
-@media (min-width: $mobile-width)  and (max-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .header__wrapper {
     padding-top: 8px;
     padding-bottom: 0;
