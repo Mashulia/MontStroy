@@ -31,10 +31,14 @@
 .about-us__full-text {
   @include reset-indents();
   margin-bottom: 52px;
-  width: 1017px;
+  width: 84.7%;
   font-size: 24px;
   line-height: 38px;
   font-weight: 500;
+
+  & br {
+    display: none;
+  }
 }
 
 .about-us__year {
@@ -44,12 +48,12 @@
 .about-us__buttons {
   display: flex;
   justify-content: space-between;
-  width: 620px;
+  width: 53.3%;
 }
 
 .about-us__button {
   padding: 15px;
-  width: 300px;
+  width: 48%;
   font-size: 20px;
   line-height: 26px;
   font-weight: 900;
@@ -59,5 +63,117 @@
   &--connection {
     color: $white-color;
     border: 1px solid rgb(151, 255, 244);
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .about-us {
+    min-height: 600px;
+    margin-bottom: 90px;
+    background-image: url("../../../img/background-tablet@1x.jpg");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../../img/background-tablet@2x.jpg");
+  }
+
+  .about-us__title {
+    padding-top: 125px;
+    padding-left: 8%;
+    margin-bottom: 19px;
+    font-size: 38px;
+    line-height: 45px;
+    letter-spacing: 2px;
+  }
+
+  .about-us__full-text {
+    margin-bottom: 84px;
+    padding-left: 8%;
+    width: 89.7%;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+
+   & br {
+      display: block;
+    }
+  }
+
+  .about-us__buttons {
+    width: 92%;
+    padding-left: 8%;
+  }
+
+  .about-us__button {
+    width: 48.4%;
+    height: 55px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $mobile-width)  and (max-width: $tablet-width) {
+  .about-us {
+    position: relative;
+    min-height: 465px;
+    margin-bottom: 219px;
+    background-image: url("../../../img/background-mobile@1x.jpg");
+    text-align: center;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../../img/background-mobile@2x.jpg");
+  }
+
+  .about-us__title {
+    padding-top: 128px;
+    padding-left: 0;
+    margin: 0 auto;
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+
+  .about-us__short-text {
+    display: block;
+
+    @include reset-indents();
+    font-size: 16px;
+    color: $white-color;
+    margin-bottom: 57px;
+  }
+
+  .about-us__full-text {
+    position: absolute;
+    left: 47%;
+    transform: translateX(-47%);
+    bottom: -263px;
+    width: 61.5%;
+    margin-bottom: 84px;
+    padding-left: 5%;
+    padding-right: 2%;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: $black-color;
+    text-align: left;
+  }
+
+  .about-us__buttons {
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .about-us__button {
+    padding: 18px;
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+
+    &--active {
+      margin-bottom: 10px;
+    }
   }
 }

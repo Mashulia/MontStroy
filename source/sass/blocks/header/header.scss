@@ -14,7 +14,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  //width: 535px;
   width: 45.6%;
 }
 
@@ -32,12 +31,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  //width: 370px;
   width: 31.6%;
 }
 
 .header__phone {
-  //width: 170px;
   width: 46%;
   font-size: 18px;
   font-weight: 700;
@@ -48,7 +45,6 @@
   margin-top: -7px;
   padding-top: 12px;
   padding-bottom: 13px;
-  //width: 191px;
   width: 51.9%;
   height: 45px;
   font-size: 16px;
@@ -59,11 +55,11 @@
 @media (min-width: $mobile-width) and (max-width: $desktop-width) {
   .header__wrapper {
     position: relative;
-    padding: 8px 8%;
+    padding-top: 8px;
+    padding-bottom: 2px;
   }
 
   .header__left {
-    //width: 150px;
     width: 23.4%;
   }
 
@@ -73,7 +69,6 @@
   }
 
   .header__right {
-    //width: 124px;
     white-space: nowrap;
     width: 19.4%;
   }
@@ -99,7 +94,6 @@
   }
 
   .header__phone {
-    //width: 124px;
     width: 100%;
     font-size: 14px;
   }
@@ -111,7 +105,8 @@
 
 @media (min-width: $mobile-width)  and (max-width: $tablet-width) {
   .header__wrapper {
-    padding: 7px 20px;
+    padding-top: 8px;
+    padding-bottom: 0;
   }
 
   .header__left {

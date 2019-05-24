@@ -14,7 +14,6 @@
   @include reset-list();
 }
 
-
 .features__item {
   position: relative;
   padding-top: 90px;
@@ -35,36 +34,119 @@
     width: 22.5%;
     margin-left: auto;
   }
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    opacity: 0.7;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+.features__icon {
+  position: absolute;
+  opacity: 0.7;
+  fill: $white-color;
 
-  &--guarantee::before {
-    background-image: url("../../../img/like.svg");
-    top: 0;
+  &--guarantee {
+    top: 15px;
     left: 35%;
     width: 62px;
     height: 64px;
   }
 
-  &--responsibility::before {
-    background-image: url("../../../img/handshake.svg");
-    top: 17px;
+  &--responsibility {
+    top: 30px;
     left: 32%;
     width: 74px;
     height: 49px;
   }
 
-  &--base::before {
-    background-image: url("../../../img/settings.svg");
-    top: -4px;
+  &--base {
+    top: 10px;
     left: 38%;
     width: 70px;
     height: 69px;
+  }
+}
+
+.features__text {
+  @include reset-indents();
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .features {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin: 0 auto;
+    width: calc(100% - 5.2%);
+  }
+
+  .features-list {
+    width: 100%;
+  }
+
+  .features__item {
+    width: 33.3%;
+    padding-top: 75px;
+    padding-bottom: 25px;
+    font-size: 12px;
+    line-height: 16px;
+    color: $black-color;
+    opacity: 0.7;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+
+    &--guarantee {
+      margin-right: 0;
+    }
+
+    &--base {
+      margin-left: 0;
+    }
+  }
+
+  .features__icon {
+    opacity: 0.3;
+    fill: $black-color;
+
+    &--guarantee {
+      top: 15px;
+      left: 35%;
+    }
+
+    &--responsibility {
+      top: 30px;
+      left: 32%;
+    }
+
+    &--base {
+      top: 10px;
+      left: 38%;
+    }
+  }
+}
+
+@media (min-width: $mobile-width)  and (max-width: $tablet-width) {
+  .features {
+    position: static;
+    margin: 0 auto;
+    width: 56%;
+    min-height: 200px;
+    transform: none;
+    border: 1px solid  #dddddd;
+  }
+
+  .features-list {
+    position: relative;
+    width: 100%;
+  }
+
+  .features__item {
+    position: absolute;
+    top: 710px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    visibility: hidden;
+    z-index: 2;
+    opacity: 1;
+    font-size: 14px;
+    line-height: 20px;
+    color: $black-color;
   }
 }

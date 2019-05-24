@@ -1,3 +1,116 @@
-.slider {
+.slider,
+.features__input {
   display: none;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .slider {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 50.4%;
+    bottom: -40px;
+    z-index: 100;
+    width: 50px;
+    height: 10px;
+    text-align: center;
+    font-size: 0;
+    transform: translateX(-50%);
+  }
+
+  .slider__label {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #dddddd;
+    cursor: pointer;
+    margin: 3px;
+  }
+
+  .features__input--1:checked ~ .slider >.slider__label[for="btn-1"],
+  .features__input--2:checked ~ .slider >.slider__label[for="btn-2"],
+  .features__input--3:checked ~ .slider >.slider__label[for="btn-3"] {
+    background-color: $main-color;
+  }
+
+  .features__input--1:checked ~ .features__list > .features__item--guarantee {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  .features__input--2:checked ~ .features__list > .features__item--responsibility {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  .features__input--3:checked ~ .features__list > .features__item--base {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  .features__input--1:checked ~ .features__list > .features__icon--guarantee {
+    opacity: 0.7;
+  }
+
+  .features__input--2:checked ~ .features__list > .features__icon--responsibility {
+    opacity: 0.7;
+  }
+
+  .features__input--3:checked ~ .features__list > .features__icon--base {
+    opacity: 0.7;
+  }
+}
+
+@media (min-width: $mobile-width)  and (max-width: $tablet-width) {
+  .slider {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    bottom: -15px;
+    z-index: 100;
+    width: 50px;
+    height: 10px;
+    text-align: center;
+    font-size: 0;
+    transform: translateX(-50%);
+  }
+
+  .slider__label {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #dddddd;
+    cursor: pointer;
+    margin: 3px;
+  }
+
+  .features__input--1:checked ~ .slider >.slider__label[for="btn-1"],
+  .features__input--2:checked ~ .slider >.slider__label[for="btn-2"],
+  .features__input--3:checked ~ .slider >.slider__label[for="btn-3"] {
+    width: 8px;
+    height: 8px;
+    background-color: $main-color;
+  }
+
+  .features__input--1:checked ~ .features__list > .features__item--guarantee {
+    visibility: visible;
+    z-index: 5;
+  }
+
+  .features__input--2:checked ~ .features__list > .features__item--responsibility {
+    visibility: visible;
+    z-index: 5;
+  }
+
+  .features__input--3:checked ~ .features__list > .features__item--base {
+    visibility: visible;
+    z-index: 5;
+  }
 }
