@@ -2,7 +2,6 @@
   @include reset-list();
   display: flex;
   flex-wrap: wrap;
-  width: 335px;
   font-size: 10px;
   font-weight: 500;
   text-transform: uppercase;
@@ -28,13 +27,13 @@
     width: 207px;
     font-family: $font-menu-popup;
     font-size: 12px;
-    line-height: 19px;
+    line-height: 20px;
     font-weight: 400;
     background-color: $gray-color;
   }
 
   .nav-list__item {
-    padding-top: 15px;
+    padding-top: 14px;
     padding-bottom: 6px;
     padding-left: 17px;
     text-align: center;
@@ -54,5 +53,9 @@
 @media (max-width: $tablet-width) {
   .nav-list {
     width: 100%;
+  }
+
+  .nav-list__item {
+    padding-top: 15px;
   }
 }

@@ -1,17 +1,18 @@
 .nav {
-  width: 62.6%;
+  width: 64.9%;
 }
 
 @media (max-width: $desktop-width) {
   .nav {
     position: absolute;
     display: none;
-    top: 50px;
+    top: 52px;
     left: 0;
     width: 207px;
 
     &--show {
       display: block;
+      z-index: 10;
     }
   }
 }
@@ -19,7 +20,7 @@
 @media (max-width: $tablet-width)  {
   .nav {
     position: absolute;
-    top: 49px;
+    top: 46px;
     width: 100%;
   }
 }

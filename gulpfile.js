@@ -16,6 +16,10 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var uglify = require("gulp-uglify");
 var pump = require("pump");
+var svgmin = require("gulp-svgmin");
+var cheerio = require("gulp-cheerio");
+var clean   = require("gulp-cheerio-clean-svg");
+var replace = require("gulp-replace");
 var del = require("del");
 
 gulp.task("css", function () {
@@ -70,6 +74,19 @@ gulp.task("webp", function () {
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/*.svg")
+    .pipe(svgmin({
+      js2svg: {
+        pretty: true
+      }}))
+    .pipe(cheerio({
+      run: function ($) {
+        $("[fill]").removeAttr("fill");
+        $("[stroke]").removeAttr("stroke");
+        $("[style]").removeAttr("style");
+      },
+      parserOptions: {xmlMode: true}
+    }))
+    .pipe(replace("&gt;", ">"))
     .pipe(svgstore({inlineSvg: true}))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));

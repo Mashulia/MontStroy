@@ -2,9 +2,9 @@
   color: #fffffe;
   min-height: 935px;
   background-color: $black-color;
-  background-image: url("../../../img/background-desktop@1x.jpg");
+  background-image: linear-gradient(rgba(5, 5, 5, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../../img/background-desktop@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-position: 0 0, 50% 100%;
   background-size: auto;
 }
 
@@ -17,7 +17,7 @@
   padding-top: 150px;
   margin-bottom: 23px;
   font-family: $font-header;
-  font-size: 72px;
+  font-size: 73px;
   line-height: 86px;
   letter-spacing: 3px;
   font-weight: 900;
@@ -30,14 +30,18 @@
 
 .about-us__full-text {
   @include reset-indents();
-  margin-bottom: 52px;
-  width: 84.7%;
+  margin-bottom: 54px;
+  width: 87.18%;
   font-size: 24px;
   line-height: 38px;
   font-weight: 500;
+}
 
-  & br {
-    display: none;
+.about-us__transfer {
+  display: none;
+
+  &--second {
+    display: block;
   }
 }
 
@@ -48,12 +52,12 @@
 .about-us__buttons {
   display: flex;
   justify-content: space-between;
-  width: 53.3%;
+  width: 53.2%;
 }
 
 .about-us__button {
-  padding: 15px;
-  width: 48%;
+  padding: 14px;
+  width: 48.3%;
   font-size: 20px;
   line-height: 26px;
   font-weight: 900;
@@ -69,8 +73,8 @@
 @media (max-width: $desktop-width) {
   .about-us {
     min-height: 600px;
-    margin-bottom: 90px;
-    background-image: url("../../../img/background-tablet@1x.jpg");
+    margin-bottom: 89px;
+    background-image: linear-gradient(rgba(5, 5, 5, 0) 0%, rgba(0, 0, 0, 0.85) 100%), url("../../../img/background-tablet@1x.jpg");
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -80,22 +84,26 @@
   .about-us__title {
     padding-top: 125px;
     padding-left: 8%;
-    margin-bottom: 19px;
+    margin-bottom: 17px;
     font-size: 38px;
     line-height: 45px;
     letter-spacing: 2px;
   }
 
   .about-us__full-text {
-    margin-bottom: 84px;
-    padding-left: 8%;
-    width: 89.7%;
+    margin-bottom: 86px;
+    padding-left: 8.3%;
+    width: 89.1%;
     font-size: 16px;
     line-height: 19px;
     font-weight: 400;
+  }
 
-   & br {
-      display: block;
+  .about-us__transfer {
+    display: block;
+
+    &--second {
+      display: none;
     }
   }
 
@@ -105,6 +113,7 @@
   }
 
   .about-us__button {
+    padding: 15px;
     width: 48.4%;
     height: 55px;
     font-size: 16px;
@@ -117,6 +126,7 @@
     min-height: 465px;
     margin-bottom: 219px;
     background-image: url("../../../img/background-mobile@1x.jpg");
+    background-position: 50% 100%;
     text-align: center;
   }
 
@@ -125,11 +135,11 @@
   }
 
   .about-us__title {
-    padding-top: 128px;
+    padding-top: 127px;
     padding-left: 0;
     margin: 0 auto;
     margin-bottom: 18px;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 20px;
     letter-spacing: 0;
   }
@@ -157,6 +167,18 @@
     font-weight: 400;
     color: $black-color;
     text-align: left;
+  }
+
+  .about-us__transfer {
+    display: none;
+
+    &--fourth {
+      display: block;
+    }
+  }
+
+  .about-us__year--full-text {
+    color: $black-color;
   }
 
   .about-us__buttons {

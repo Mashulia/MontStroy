@@ -1,10 +1,6 @@
-var nav = document.querySelector('.nav');
-var toggle = document.querySelector('.header__toggle');
+var nav = document.querySelector(".nav");
+var toggle = document.querySelector(".header__toggle");
 
-toggle.addEventListener('click', function () {
-  if (nav.classList.contains('nav--show')) {
-    nav.classList.remove('nav--show');
-  } else {
-    nav.classList.add('nav--show');
-  }
+toggle.addEventListener("click", function () {
+    nav.classList.toggle("nav--show");
 });

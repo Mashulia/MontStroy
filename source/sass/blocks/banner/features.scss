@@ -26,7 +26,7 @@
     margin-right: 23.5%;
   }
 
-  &--responsibility  {
+  &--responsibility {
     width: 16.6%;
   }
 
@@ -42,21 +42,21 @@
   fill: $white-color;
 
   &--guarantee {
-    top: 15px;
+    top: 2px;
     left: 35%;
     width: 62px;
     height: 64px;
   }
 
   &--responsibility {
-    top: 30px;
+    top: 17px;
     left: 32%;
     width: 74px;
     height: 49px;
   }
 
   &--base {
-    top: 10px;
+    top: -3px;
     left: 38%;
     width: 70px;
     height: 69px;
@@ -78,17 +78,20 @@
   }
 
   .features-list {
+    position: relative;
     width: 100%;
+    min-height: 165px;
   }
 
   .features__item {
     width: 33.3%;
     padding-top: 75px;
-    padding-bottom: 25px;
+    padding-bottom: 37px;
     font-size: 12px;
     line-height: 16px;
     color: $black-color;
     opacity: 0.7;
+    background-color: $white-color;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 
     &--guarantee {
@@ -105,19 +108,49 @@
     fill: $black-color;
 
     &--guarantee {
-      top: 15px;
-      left: 35%;
+      top: 3px;
+      left: 37%;
     }
 
     &--responsibility {
-      top: 30px;
-      left: 32%;
+      top: 18px;
+      left: 35%;
     }
 
     &--base {
-      top: 10px;
-      left: 38%;
+      top: 0;
+      left: 36%;
     }
+  }
+
+  .features__input--1:checked ~ .slider > .slider__label[for="btn-1"],
+  .features__input--2:checked ~ .slider > .slider__label[for="btn-2"],
+  .features__input--3:checked ~ .slider > .slider__label[for="btn-3"] {
+    background-color: $main-color;
+  }
+
+  .features__input--1:checked ~ .features__list > .features__item--guarantee {
+    @include item-checked-tablet();
+  }
+
+  .features__input--2:checked ~ .features__list > .features__item--responsibility {
+    @include item-checked-tablet();
+  }
+
+  .features__input--3:checked ~ .features__list > .features__item--base {
+    @include item-checked-tablet();
+  }
+
+  .features__input--1:checked ~ .features__item > .features__icon--guarantee {
+    opacity: 1;
+  }
+
+  .features__input--2:checked ~ .features__item > .features__icon--responsibility {
+    opacity: 1;
+  }
+
+  .features__input--3:checked ~ .features__item > .features__icon--base {
+    opacity: 1;
   }
 }
 
@@ -131,22 +164,66 @@
     border: 1px solid  #dddddd;
   }
 
-  .features-list {
+  .features__list {
     position: relative;
+    height: 195px;
+    overflow: hidden;
     width: 100%;
   }
 
   .features__item {
     position: absolute;
-    top: 710px;
+    top: 0;
     left: 0;
     width: 100%;
-    margin: 0;
+    height: 195px;
+    padding-top: 115px;
     visibility: hidden;
-    z-index: 2;
     opacity: 1;
     font-size: 14px;
     line-height: 20px;
     color: $black-color;
+  }
+
+  .features__input--1:checked ~ .slider > .slider__label[for="btn-1"],
+  .features__input--2:checked ~ .slider > .slider__label[for="btn-2"],
+  .features__input--3:checked ~ .slider > .slider__label[for="btn-3"] {
+    width: 8px;
+    height: 8px;
+    background-color: $main-color;
+  }
+
+  .features__input--1:checked ~ .features__list > .features__item--guarantee {
+    @include item-checked-mobile();
+  }
+
+  .features__input--2:checked ~ .features__list > .features__item--responsibility {
+    @include item-checked-mobile();
+  }
+
+  .features__input--3:checked ~ .features__list > .features__item--base {
+    @include item-checked-mobile();
+  }
+
+  .features__icon {
+    opacity: 1;
+    fill: $black-color;
+
+    &--guarantee {
+      top: 35px;
+      left: 37%;
+    }
+
+    &--responsibility {
+      top: 41px;
+      left: 34%;
+      width: 89px;
+      height: 59px;
+    }
+
+    &--base {
+      top: 30px;
+      left: 36%;
+    }
   }
 }
