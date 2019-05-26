@@ -40,24 +40,25 @@
   position: absolute;
   opacity: 0.7;
   fill: $white-color;
+  left: 50%;
 
   &--guarantee {
     top: 2px;
-    left: 35%;
+    margin-left: -31px;
     width: 62px;
     height: 64px;
   }
 
   &--responsibility {
     top: 17px;
-    left: 32%;
+    margin-left: -37px;
     width: 74px;
     height: 49px;
   }
 
   &--base {
     top: -3px;
-    left: 38%;
+    margin-left: -35px;
     width: 70px;
     height: 69px;
   }
@@ -109,17 +110,14 @@
 
     &--guarantee {
       top: 3px;
-      left: 37%;
     }
 
     &--responsibility {
-      top: 18px;
-      left: 35%;
+      top: 20px;
     }
 
     &--base {
       top: 0;
-      left: 36%;
     }
   }
 
@@ -158,7 +156,7 @@
   .features {
     position: static;
     margin: 0 auto;
-    width: 56%;
+    width: 87%;
     min-height: 200px;
     transform: none;
     border: 1px solid  #dddddd;
@@ -211,19 +209,17 @@
 
     &--guarantee {
       top: 35px;
-      left: 37%;
     }
 
     &--responsibility {
       top: 41px;
-      left: 34%;
       width: 89px;
       height: 59px;
+      margin-left: -45px;
     }
 
     &--base {
       top: 30px;
-      left: 36%;
     }
   }
 }

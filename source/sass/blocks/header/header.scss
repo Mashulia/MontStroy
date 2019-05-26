@@ -78,7 +78,7 @@
     display: block;
     position: relative;
     width: 26px;
-    height: 31px;
+    height: 30px;
     background-color: $gray-light;
     cursor: pointer;
     border: none;
@@ -106,7 +106,7 @@
 
 @media (max-width: $tablet-width) {
   .header__wrapper {
-    padding: 9px 4.2% 5px;
+    padding: 9px 6.2% 5px;
   }
 
   .header__left {
