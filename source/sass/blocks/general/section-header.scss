@@ -1,0 +1,27 @@
+.section-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-header__title {
+  position: relative;
+
+  @include reset-indents();
+  margin-bottom: 135px;
+  margin-left: 3px;
+  width: 25.8%;
+  font-family: $font-header;
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.section-header__line {
+  flex-grow: 1;
+  margin-top: 23px;
+  width: calc(100% - 25.8%);
+  height: 2px;
+  background-color: $black-color;
+}
