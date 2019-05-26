@@ -1,0 +1,38 @@
+.services-item__title {
+  @include reset-indents();
+  padding-top: 32px;
+  margin-bottom: 23px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 900;
+  text-transform: uppercase;
+
+  &--assembly,
+  &--joining {
+    margin-bottom: 14px;
+  }
+}
+
+.services-item__button {
+  display: none;
+}
+
+.services-item__list {
+  @include reset-list();
+}
+
+.services-item__link {
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 16px;
+}
+
+.services-item__link a {
+  font: inherit;
+  color: $link-color;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}

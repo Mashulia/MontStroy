@@ -1,0 +1,30 @@
+.services__header {
+  margin-bottom: 20px;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include reset-list();
+}
+
+.services__item {
+  width: 30.7%;
+  min-height: 495px;
+  padding: 0 3.8% 0 3.9%;
+  margin-right: 3.8%;
+  margin-bottom: 47px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+
+  &:nth-child(3n) {
+    padding-right: 4.5%;
+  }
+}
+
+.services__item:nth-child(3n) {
+  margin-right: 0;
+  padding-left: 3.3%;
+}
+
+
