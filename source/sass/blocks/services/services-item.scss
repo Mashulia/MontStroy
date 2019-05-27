@@ -36,3 +36,13 @@
     text-decoration: underline;
   }
 }
+
+@media (max-width: $desktop-width) {
+  .services-item__title {
+
+  }
+
+  .services-item__list--hidden {
+    display: none;
+  }
+}

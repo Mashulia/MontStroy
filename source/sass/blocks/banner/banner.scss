@@ -1,4 +1,10 @@
 .banner {
   position: relative;
+  margin-bottom: 100px;
 }
 
+@media (max-width: $desktop-width) {
+  .banner {
+    margin-bottom: 70px;
+  }
+}
