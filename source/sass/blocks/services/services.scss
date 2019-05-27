@@ -18,13 +18,34 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 
   &:nth-child(3n) {
-    padding-right: 4.5%;
+    margin-right: 0;
+    padding-left: 3.3%;
   }
 }
 
-.services__item:nth-child(3n) {
-  margin-right: 0;
-  padding-left: 3.3%;
+@media (max-width: $desktop-width) {
+  .services__list {
+    position: relative;
+    flex-direction: column;
+  }
+
+  .services__header {
+    margin-bottom: 0;
+  }
+
+  .services__item {
+    margin-left: 51.4%;
+    width: 48.6%;
+    min-height: 0;
+    height: 50px;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    background-color: $services-item-color;
+    box-shadow: none;
+
+    &:nth-child(3n) {
+      padding: 0;
+    }
+  }
 }
-
-
