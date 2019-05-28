@@ -36,8 +36,23 @@
   .services__item {
     margin-left: 51.4%;
     width: 48.6%;
-    min-height: 0;
-    height: 50px;
+    min-height: 50px;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    background-color: $services-item-color;
+    box-shadow: none;
+
+    &:nth-child(3n) {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .services__item {
+    margin-left: 0;
+    width: 100%;
     padding: 0;
     margin-right: 0;
     margin-bottom: 10px;

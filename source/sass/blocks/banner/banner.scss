@@ -8,3 +8,9 @@
     margin-bottom: 70px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .banner {
+    margin-bottom: 38px;
+  }
+}

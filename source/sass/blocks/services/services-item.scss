@@ -127,3 +127,31 @@
     display: none;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .services-item__title {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: $black-color;
+  }
+
+  .services-item--active {
+    position: static;
+  }
+
+  .services-item__link  a {
+      display: block;
+      padding: 12px 22px 9px;
+      padding-right: 14.2%;
+      font: inherit;
+      font-size: 12px;
+      line-height: 26x;
+      color: $black-color;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+}

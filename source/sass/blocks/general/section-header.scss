@@ -36,3 +36,15 @@
     display: none;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .section-header {
+    padding: 6.2%;
+  }
+
+  .section-header__title {
+    margin-bottom: 4px;
+    font-size: 20px;
+    line-height: normal;
+  }
+}
