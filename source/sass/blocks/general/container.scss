@@ -1,5 +1,5 @@
 .container {
-  max-width: $desktop-width;
+  width: $desktop-width;
   margin: 0 auto;
 
   @include indents-desktop();
@@ -7,7 +7,7 @@
 
 @media (max-width: $desktop-width) {
   .container {
-    // width: $tablet-width;
+    width: 100%;
 
     @include indents-tablet();
   }
