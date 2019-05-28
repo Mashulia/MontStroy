@@ -13,7 +13,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet-width) and (min-width: $mobile-width) {
   .container {
     padding: 0;
   }

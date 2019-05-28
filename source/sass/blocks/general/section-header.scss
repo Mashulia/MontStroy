@@ -12,7 +12,7 @@
   font-family: $font-header;
   font-size: 30px;
   line-height: 50px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -27,7 +27,6 @@
 
 @media (max-width: $desktop-width) {
   .section-header__title {
-    margin-bottom: 20px;
     font-size: 25px;
     line-height: 39px;
   }
@@ -38,12 +37,7 @@
 }
 
 @media (max-width: $tablet-width) {
-  .section-header {
-    padding: 6.2%;
-  }
-
   .section-header__title {
-    margin-bottom: 4px;
     font-size: 20px;
     line-height: normal;
   }

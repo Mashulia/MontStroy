@@ -66,6 +66,9 @@
 
 .features__text {
   @include reset-indents();
+  width: 75.5%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media (max-width: $desktop-width) {
@@ -102,6 +105,10 @@
     &--base {
       margin-left: 0;
     }
+  }
+
+  .features__item--responsibility .features__text {
+    width: 57.5%;
   }
 
   .features__icon {
