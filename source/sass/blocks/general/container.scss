@@ -1,5 +1,5 @@
 .container {
-  width: $desktop-width;
+  max-width: $desktop-width;
   margin: 0 auto;
 
   @include indents-desktop();
@@ -7,7 +7,7 @@
 
 @media (max-width: $desktop-width) {
   .container {
-    width: $tablet-width;
+    // width: $tablet-width;
 
     @include indents-tablet();
   }
@@ -15,7 +15,6 @@
 
 @media (max-width: $tablet-width) {
   .container {
-    width: $mobile-width;
     padding: 0;
   }
 }
