@@ -3,15 +3,14 @@
   display: flex;
   flex-wrap: wrap;
   font-size: 10px;
+  letter-spacing: -0.06px;
   font-weight: 500;
   text-transform: uppercase;
 }
 
-.nav-list__item {
-  padding: 19px 19px 25px 0;
-}
-
 .nav-list__item a {
+  display: block;
+  padding: 19px 19px 25px 0;
   font: inherit;
   color: $menu-color;
 
