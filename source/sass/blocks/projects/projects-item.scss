@@ -1,0 +1,99 @@
+.projects-item__ref {
+  color: $white-color;
+}
+
+.project-item__title {
+  @include reset-indents();
+  margin-bottom: 47px;
+  font-family: $font-stack;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 900;
+
+  &--center,
+  &--cinema {
+    margin-bottom: 25px;
+  }
+
+  &--company,
+  &--theater {
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+.projects-item__text {
+  @include reset-indents();
+  line-height: 22px;
+  color: $white-color;
+  opacity: 0.66;
+
+  &--stadium,
+  &--cinema {
+    width: 81.7%;
+  }
+
+  &--center,
+  &--medial {
+    width: 95.2%;
+  }
+
+  &--company {
+    width: 80.8%;
+  }
+
+  &--theater {
+    width: 80.6%;
+  }
+}
+
+.projects-item__link {
+  position: absolute;
+  right: 10px;
+  bottom: 12px;
+  width: 45px;
+  height: 34px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.34);
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+  }
+
+  &::after {
+    top: 45%;
+    left: 67%;
+    margin-left: -7px;
+    transform: translate(-67%, -45%);
+    width: 15px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.34);
+  }
+
+  &::before {
+    top: 47%;
+    left: 75%;
+    margin-left: -2px;
+    transform: translate(-75%, -45%);
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-left: 4px solid rgba(255, 255, 255, 0.34);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $main-color;
+
+    &::after {
+      background-color: $black-color;
+    }
+
+    &::before {
+      border-left-color: $black-color;
+    }
+  }
+}

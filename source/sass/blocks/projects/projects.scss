@@ -1,0 +1,81 @@
+.projects__header {
+  margin-bottom: 34px;
+}
+
+.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: top;
+
+  @include reset-list();
+}
+
+.projects__item {
+  position: relative;
+  flex-grow: 1;
+  width: 24.6%;
+  min-height: 290px;
+  padding: 53px 0 35px 2.6%;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  background-color: $black-color;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  &--stadium {
+    background-image: url("../img/stadium-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/stadium-desktop@2x.jpg");
+    }
+  }
+
+  &--center {
+    background-image: url("../img/business-center-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/business-center-desktop@2x.jpg");
+    }
+  }
+
+  &--cinema {
+    background-image: url("../img/cinema-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/cinema-desktop@2x.jpg");
+    }
+  }
+
+  &--medial {
+    background-image: url("../img/medial-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/medial-desktop@2x.jpg");
+    }
+  }
+
+  &--company {
+    padding-top: 40px;
+    background-image: url("../img/energo-company-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/energo-company-desktop@2x.jpg");
+    }
+  }
+
+  &--theater {
+    padding-top: 40px;
+    background-image: url("../img/theater-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/theater-desktop@2x.jpg");
+    }
+  }
+
+  &:nth-child(4n),
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
