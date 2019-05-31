@@ -160,12 +160,6 @@
     background-color: $main-color;
   }
 
-  .features__input--1:checked ~ .slider > .slider__label[for="features__btn1"],
-  .features__input--2:checked ~ .slider > .slider__label[for="features__btn2"],
-  .features__input--3:checked ~ .slider > .slider__label[for="features__btn3"] {
-    background-color: $main-color;
-  }
-
   .features__input--1:checked ~ .features__list > .features__item--guarantee {
     @include item-checked-tablet();
   }
@@ -195,7 +189,7 @@
   .features {
     margin-bottom: 60px;
     width: calc(100% - 12%);
-    border: 1px solid  #dddddd;
+    border: 1px solid  $border-color;
   }
 
   .features__list {
@@ -219,12 +213,11 @@
     color: $black-color;
   }
 
-  .features__input--1:checked ~ .slider > .slider__label[for="btn-1"],
-  .features__input--2:checked ~ .slider > .slider__label[for="btn-2"],
-  .features__input--3:checked ~ .slider > .slider__label[for="btn-3"] {
+  .features__input--1:checked ~ .slider > .slider__label[for="features__btn-1"],
+  .features__input--2:checked ~ .slider > .slider__label[for="features__btn-2"],
+  .features__input--3:checked ~ .slider > .slider__label[for="features__btn-3"] {
     width: 8px;
     height: 8px;
-    background-color: $main-color;
   }
 
   .features__input--1:checked ~ .features__list > .features__item--guarantee {

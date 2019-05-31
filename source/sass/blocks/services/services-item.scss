@@ -152,7 +152,6 @@
 
 @media (max-width: $tablet-width) {
   .services-item {
-
     &::after {
       top: 24px;
     }
@@ -165,7 +164,7 @@
   }
 
   .services-item__category {
-    padding: 14px 20px 12px;
+    padding: 14px 6% 12px;
 
 
     &--exploitation,
@@ -200,7 +199,7 @@
   }
 
   .services-item__link a {
-    padding: 13px 22px 11px;
+    padding: 13px 6.4% 11px;
     padding-right: 9.2%;
     font: inherit;
     font-size: 12px;
