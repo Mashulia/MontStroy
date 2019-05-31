@@ -1,6 +1,7 @@
 .section-header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .section-header__title {
@@ -28,6 +29,7 @@
   .section-header__title {
     font-size: 25px;
     line-height: 39px;
+    letter-spacing: 2px;
   }
 
   .section-header__line {
@@ -36,8 +38,14 @@
 }
 
 @media (max-width: $tablet-width) {
+  .section-header {
+    padding: 0 6%;
+    margin-bottom: 24px;
+  }
+
   .section-header__title {
     font-size: 20px;
     line-height: normal;
+    letter-spacing: 1px;
   }
 }

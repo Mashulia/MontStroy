@@ -2,10 +2,6 @@
   margin-bottom: 60px;
 }
 
-.services__header {
-  margin-bottom: 20px;
-}
-
 .services__title {
   margin-left: 3px;
 }
@@ -31,6 +27,10 @@
 }
 
 @media (max-width: $desktop-width) {
+  .services {
+    margin-bottom: 105px;
+  }
+
   .services__list {
     position: relative;
     flex-direction: column;
@@ -53,9 +53,12 @@
 }
 
 @media (max-width: $tablet-width) {
-  .services__header {
-    padding: 0 5.2%;
-    margin-bottom: 24px;
+  .services {
+    margin-bottom: 45px;
+  }
+
+  .services__title {
+    margin-left: 0;
   }
 
   .services__item {

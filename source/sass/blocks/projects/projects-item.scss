@@ -2,7 +2,7 @@
   color: $white-color;
 }
 
-.project-item__title {
+.projects-item__title {
   @include reset-indents();
   margin-bottom: 47px;
   font-family: $font-stack;
@@ -21,6 +21,12 @@
     font-size: 32px;
     line-height: 42px;
   }
+  // &:nth-last-of-type(2),
+  // &:last-of-type {
+  //   margin-bottom: 30px;
+  //   font-size: 32px;
+  //   line-height: 42px;
+  // }
 }
 
 .projects-item__text {
@@ -95,5 +101,64 @@
     &::before {
       border-left-color: $black-color;
     }
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .project-item__title {
+    margin-bottom: 6px;
+    line-height: 42px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+
+    &--company,
+    &--theater {
+      margin-bottom: 3px;
+      font-size: 24px;
+      line-height: 42px;
+    }
+  }
+
+  .projects-item__text {
+    font-size: 18px;
+
+    &--stadium,
+    &--center {
+      width: 83.7%;
+    }
+
+    &--cinema,
+    &--medial,
+    &--company {
+      width: 72%;
+    }
+
+    &--theater {
+      width: 88.6%;
+    }
+
+    &-tablet {
+      display: none;
+    }
+  }
+
+  .projects-item__link {
+    display: none;
+  }
+}
+  @media (max-width: $tablet-width) {
+  .project-item__title {
+    font-size: 16px;
+    line-height: 50px;
+
+    &--company,
+    &--theater {
+      font-size: 16px;
+      line-height: 50px;
+    }
+  }
+
+  .projects-item__text--mobile {
+    display: none;
   }
 }
