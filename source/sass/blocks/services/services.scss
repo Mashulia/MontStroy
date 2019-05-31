@@ -14,15 +14,16 @@
 }
 
 .services__item {
-  width: 30.7%;
+  width: 30.9%;
   min-height: 495px;
-  padding: 32px 4.1% 0 3.6%;
-  margin-right: 3.8%;
+  padding: 32px 4.55% 0 3.6%;
+  margin-right: 3.6%;
   margin-bottom: 47px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 
   &:nth-child(3n) {
     margin-right: 0;
+    padding-left: 3%;
   }
 }
 

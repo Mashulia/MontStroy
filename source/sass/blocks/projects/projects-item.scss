@@ -105,7 +105,7 @@
 }
 
 @media (max-width: $desktop-width) {
-  .project-item__title {
+  .projects-item__title {
     margin-bottom: 6px;
     line-height: 42px;
     font-weight: 700;
@@ -147,7 +147,7 @@
   }
 }
   @media (max-width: $tablet-width) {
-  .project-item__title {
+  .projects-item__title {
     font-size: 16px;
     line-height: 50px;
 
