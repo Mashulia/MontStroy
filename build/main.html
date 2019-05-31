@@ -98,13 +98,13 @@
         </div>
         <section class="features features--desktop">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <input class="features__input features__input--1" type="radio" id="btn-1" name="toggle">
-          <input class="features__input features__input--2" type="radio" id="btn-2" name="toggle" checked="">
-          <input class="features__input features__input--3" type="radio" id="btn-3" name="toggle">
+          <input class="features__input features__input--1" type="radio" id="features__btn-1" name="toggle">
+          <input class="features__input features__input--2" type="radio" id="features__btn-2" name="toggle" checked="">
+          <input class="features__input features__input--3" type="radio" id="features__btn-3" name="toggle">
           <div class="features__slider slider">
-            <label class="slider__label" for="btn-1"><span class="visually-hidden">Первое преимущество</span></label>
-            <label class="slider__label" for="btn-2"><span class="visually-hidden">Второе преимущество</span></label>
-            <label class="slider__label" for="btn-3"><span class="visually-hidden">Третье преимущество</span></label>
+            <label class="slider__label" for="features__btn-1"><span class="visually-hidden">Первое преимущество</span></label>
+            <label class="slider__label" for="features__btn-2"><span class="visually-hidden">Второе преимущество</span></label>
+            <label class="slider__label" for="features__btn-3"><span class="visually-hidden">Третье преимущество</span></label>
           </div>
           <ul class="features__list">
             <li class="features__item features__item--guarantee">
@@ -132,13 +132,13 @@
     <div class="container">
       <section class="features features--tablet">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <input class="features__input features__input--1" type="radio" id="btn1" name="toggle">
-          <input class="features__input features__input--2" type="radio" id="btn2" name="toggle" checked="">
-          <input class="features__input features__input--3" type="radio" id="btn3" name="toggle">
+          <input class="input features__input features__input--1" type="radio" id="features__btn1" name="toggle">
+          <input class="input features__input features__input--2" type="radio" id="features__btn2" name="toggle" checked="">
+          <input class="input features__input features__input--3" type="radio" id="features__btn3" name="toggle">
           <div class="features__slider slider">
-            <label class="slider__label" for="btn1"><span class="visually-hidden">Первое преимущество</span></label>
-            <label class="slider__label" for="btn2"><span class="visually-hidden">Второе преимущество</span></label>
-            <label class="slider__label" for="btn3"><span class="visually-hidden">Третье преимущество</span></label>
+            <label class="slider__label" for="features__btn1"><span class="visually-hidden">Первое преимущество</span></label>
+            <label class="slider__label" for="features__btn2"><span class="visually-hidden">Второе преимущество</span></label>
+            <label class="slider__label" for="features__btn3"><span class="visually-hidden">Третье преимущество</span></label>
           </div>
           <ul class="features__list">
             <li class="features__item features__item--guarantee">
@@ -366,6 +366,76 @@
         </li>
       </ul>
     </section>
+    <sections class="partners" id="partners">
+      <div class="partners__header section-header">
+        <h2 class="partners__title section-header__title">Партнеры</h2>
+        <span class="section-header__line"></span>
+        <div class="partners__arrows">
+          <button class="partners__arrow partners__arrow--back" type="button"><span class="visually-hidden">Назад</span></button>
+          <button class="partners__arrow partners__arrow--forward" type="button"><span class="visually-hidden">Вперед</span></button>
+        </div>
+      </div>
+        <input class="input partners__input partners__input--1" type="radio" id="partners__btn-1" name="toggle">
+        <input class="input partners__input partners__input--2" type="radio" id="partners__btn-2" name="toggle">
+        <input class="input partners__input partners__input--3" type="radio" id="partners__btn-3" name="toggle" checked="">
+        <input class="input partners__input partners__input--4" type="radio" id="partners__btn-4" name="toggle">
+        <div class="projects__slider slider">
+          <label class="slider__label" for="projects__btn-1"><span class="visually-hidden">Ava company</span></label>
+          <label class="slider__label" for="projects__btn-2"><span class="visually-hidden">Mirror</span></label>
+          <label class="slider__label" for="projects__btn-3"><span class="visually-hidden">Shield</span></label>
+          <label class="slider__label" for="projects__btn-4"><span class="visually-hidden">ЗАО «НТФ Теплодомэнерг»</span></label>
+        </div>
+      <ul class="partners__list partners-list">
+        <li class="partners-list__item">
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/аva-company-logo-desktop@1x.webp, img/аva-company-logo-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/аva-company-logo-tablet@1x.webp, img/аva-company-logo-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/аva-company-logo-mobile@1x.webp, img/аva-company-logo-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/аva-company-logo-desktop@1x.png 1x, img/аva-company-logo-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/аva-company-logo-tablet@1x.png 1x, img/аva-company-logo-tablet@2x.png 2x">
+              <img class="partners-list__image" src="img/аva-company-logo-mobile@1x.png" srcset="img/аva-company-logo-mobile@2x.png 2x" alt="Логотип AVA company">
+            </picture>
+          </a>
+          </li>
+          <li class="partners-list__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/mirror-logo-desktop@1x.webp, img/mirror-logo-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/mirror-logo-tablet@1x.webp, img/mirror-logo-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/mirror-logo-mobile@1x.webp, img/mirror-logo-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/mirror-logo-desktop@1x.png 1x, img/mirror-logo-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/mirror-logo-tablet@1x.png 1x, img/mirror-logo-tablet@2x.png 2x">
+                <img class="partners-list__image" src="img/mirror-logo-mobile@1x.png" srcset="img/mirror-logo-mobile@2x.png 2x" alt="Логотип Mirror">
+              </picture>
+            </a>
+          </li>
+          <li class="partners-list__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/shield-logo-desktop@1x.webp, img/shield-logo-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/shield-logo-tablet@1x.webp, img/shield-logo-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/shield-logo-mobile@1x.webp, img/shield-logo-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/shield-logo-desktop@1x.png 1x, img/shield-logo-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/shield-logo-tablet@1x.png 1x, img/shield-logo-tablet@2x.png 2x">
+                <img class="partners-list__image" src="img/shield-logo-mobile@1x.png" srcset="img/shield-logo-mobile@2x.png 2x" alt="Логотип Shield">
+              </picture>
+            </a>
+          </li>
+          <li class="partners-list__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/warm-energy-logo-desktop@1x.webp, img/warm-energy-logo-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/warm-energy-logo-tablet@1x.webp, img/warm-energy-logo-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/warm-energy-logo-mobile@1x.webp, img/warm-energy-logo-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/warm-energy-logo-desktop@1x.png 1x, img/warm-energy-logo-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/warm-energy-logo-tablet@1x.png 1x, img/warm-energy-logo-tablet@2x.png 2x">
+                <img class="partners-list__image" src="img/warm-energy-logo-mobile@1x.png" srcset="img/warm-energy-logo-mobile@2x.png 2x" alt="Логотип ЗАО «НТФ Теплодомэнерг»">
+              </picture>
+            </a>
+          </li>
+        </ul>
+      </sections>
     </div>
   </main>
   <script src="js/script.min.js"></script>

@@ -154,14 +154,14 @@
     width: 85.5%;
   }
 
-  .features__input--1:checked ~ .slider > .slider__label[for="btn-1"],
-  .features__input--2:checked ~ .slider > .slider__label[for="btn-2"],
-  .features__input--3:checked ~ .slider > .slider__label[for="btn-3"] {
+  .features__input--1:checked ~ .slider > .slider__label[for="features__btn-1"],
+  .features__input--2:checked ~ .slider > .slider__label[for="features__btn-2"],
+  .features__input--3:checked ~ .slider > .slider__label[for="features__btn-3"] {
     background-color: $main-color;
   }
-  .features__input--1:checked ~ .slider > .slider__label[for="btn1"],
-  .features__input--2:checked ~ .slider > .slider__label[for="btn2"],
-  .features__input--3:checked ~ .slider > .slider__label[for="btn3"] {
+  .features__input--1:checked ~ .slider > .slider__label[for="features__btn1"],
+  .features__input--2:checked ~ .slider > .slider__label[for="features__btn2"],
+  .features__input--3:checked ~ .slider > .slider__label[for="features__btn3"] {
     background-color: $main-color;
   }
 
