@@ -1,3 +1,7 @@
+.projects {
+  margin-bottom: 110px;
+}
+
 .projects-item__ref {
   color: $white-color;
 }
@@ -9,24 +13,19 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 900;
+  letter-spacing: -0.1px;
 
   &--center,
   &--cinema {
     margin-bottom: 25px;
   }
+}
 
-  &--company,
-  &--theater {
-    margin-bottom: 30px;
-    font-size: 32px;
-    line-height: 42px;
-  }
-  // &:nth-last-of-type(2),
-  // &:last-of-type {
-  //   margin-bottom: 30px;
-  //   font-size: 32px;
-  //   line-height: 42px;
-  // }
+.projects-item:nth-last-of-type(2) .projects-item__title,
+.projects-item:last-of-type .projects-item__title {
+  margin-bottom: 30px;
+  font-size: 32px;
+  line-height: 42px;
 }
 
 .projects-item__text {
@@ -45,12 +44,9 @@
     width: 95.2%;
   }
 
-  &--company {
-    width: 80.8%;
-  }
-
+  &--company,
   &--theater {
-    width: 80.6%;
+    width: 80.8%;
   }
 }
 
@@ -136,10 +132,10 @@
     &--theater {
       width: 88.6%;
     }
+  }
 
-    &-tablet {
-      display: none;
-    }
+  .projects-item__text-tablet {
+    display: none;
   }
 
   .projects-item__link {

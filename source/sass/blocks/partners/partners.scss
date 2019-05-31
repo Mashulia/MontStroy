@@ -1,0 +1,99 @@
+.partners .section-header {
+  margin-bottom: 39px;
+}
+
+.partners .section-header__title {
+  width: 26%;
+}
+
+.partners .section-header__line {
+  width: 61.3%;
+  margin-top: -5px;
+}
+
+.partners__arrows {
+  position: relative;
+  display: flex;
+  margin-top: -5px;
+  margin-left: 3%;
+  width: 116px;
+  height: 34px;
+  border: 2px solid $black-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-51%, -50%);
+    width: 1px;
+    height: 8px;
+    background-color: $black-color;
+  }
+}
+
+.partners__arrow {
+  padding: 0;
+  width: 50%;
+  background-color: $white-color;
+  border: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    width: 15px;
+    height: 2px;
+    background-color: $black-color;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+  }
+
+  &--forward::after {
+    right: 13px;
+  }
+
+  &--back::after {
+    left: 16px;
+  }
+
+  &--forward::before {
+    right: 9px;
+    border-left: 4px solid $black-color;
+  }
+
+  &--back::before {
+    left: 11px;
+    border-right: 4px solid $black-color;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $arrow-hover-color;
+  }
+}
+
+.partners__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @include reset-list();
+}
+
+.partners__item {
+  width: 23%;
+  margin-right: 2.6%;
+  opacity: 0.45;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
