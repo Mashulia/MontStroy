@@ -1,10 +1,5 @@
-.features {
-  width: 1190px;
-  margin: 0 auto;
-
-  &--tablet {
-    display: none;
-  }
+.features .container {
+  padding: 0;
 }
 
 .features__list {
@@ -87,7 +82,7 @@
   .features {
     position: relative;
     width: 100%;
-    margin-bottom: 69px;
+    margin-bottom: 22px;
 
     &--tablet {
       display: block;
@@ -126,7 +121,7 @@
   }
 
   .features__item--responsibility .features__text {
-    width: 57.5%;
+    width: 54.5%;
   }
 
   .features__icon {
@@ -147,11 +142,11 @@
   }
 
   .features__text--guarantee {
-    width: 83.5%;
+    width: 80.5%;
   }
 
   .features__text--base {
-    width: 85.5%;
+    width: 82.5%;
   }
 
   .features__input--1:checked ~ .slider .slider__label[for="features__btn-1"],
@@ -187,7 +182,7 @@
 
 @media (max-width: $tablet-width) {
   .features {
-    margin-bottom: 60px;
+    margin-bottom: 0;
     width: calc(100% - 12%);
     border: 1px solid  $border-color;
   }

@@ -130,6 +130,7 @@
   }
 
   .partners__wrapper {
+    margin: 0 auto;
     width: 724px;
     height: 190px;
     overflow: hidden;
@@ -231,7 +232,6 @@
 
   .partners__wrapper {
     padding: 0 6%;
-    margin: 0 auto;
     width: calc(100% - 12%);
     height: 135px;
     border: 1px solid  $border-color;
