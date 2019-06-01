@@ -154,33 +154,33 @@
     width: 85.5%;
   }
 
-  .features__input--1:checked ~ .slider > .slider__label[for="features__btn-1"],
-  .features__input--2:checked ~ .slider > .slider__label[for="features__btn-2"],
-  .features__input--3:checked ~ .slider > .slider__label[for="features__btn-3"] {
+  .features__input--1:checked ~ .slider .slider__label[for="features__btn-1"],
+  .features__input--2:checked ~ .slider .slider__label[for="features__btn-2"],
+  .features__input--3:checked ~ .slider .slider__label[for="features__btn-3"] {
     background-color: $main-color;
   }
 
-  .features__input--1:checked ~ .features__list > .features__item--guarantee {
+  .features__input--1:checked ~ .features__list .features__item--guarantee {
     @include item-checked-tablet();
   }
 
-  .features__input--2:checked ~ .features__list > .features__item--responsibility {
+  .features__input--2:checked ~ .features__list .features__item--responsibility {
     @include item-checked-tablet();
   }
 
-  .features__input--3:checked ~ .features__list > .features__item--base {
+  .features__input--3:checked ~ .features__list .features__item--base {
     @include item-checked-tablet();
   }
 
-  .features__input--1:checked ~ .features__item > .features__icon--guarantee {
+  .features__input--1:checked ~ .features__item .features__icon--guarantee {
     opacity: 1;
   }
 
-  .features__input--2:checked ~ .features__item > .features__icon--responsibility {
+  .features__input--2:checked ~ .features__item .features__icon--responsibility {
     opacity: 1;
   }
 
-  .features__input--3:checked ~ .features__item > .features__icon--base {
+  .features__input--3:checked ~ .features__item .features__icon--base {
     opacity: 1;
   }
 }

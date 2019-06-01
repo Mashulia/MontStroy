@@ -136,6 +136,8 @@
     display: block;
 
     @include reset-indents();
+    margin: 0 auto;
+    width: 85%;
     font-size: 16px;
     color: $white-color;
     margin-bottom: 57px;
