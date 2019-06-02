@@ -1,0 +1,25 @@
+.map {
+  position: relative;
+  height: 807px;
+}
+
+.map__iframe,
+.map__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.map__image {
+  @include reset-indents();
+  z-index: 5;
+  overflow: hidden;
+}
+
+.map__iframe {
+  z-index: 10;
+  height: 807px;
+  border: none;
+}
+
