@@ -1,0 +1,60 @@
+.form__field {
+  @include reset-indents();
+}
+
+.form__input {
+  width: 100%;
+  padding: 10px 0 15px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  line-height: 50px;
+  letter-spacing: 1.4px;
+
+  &::placeholder {
+    font-size: 20px;
+    line-height: 50px;
+    letter-spacing: 1.2px;
+    color: $black-color;
+  }
+}
+
+.form__field-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 17px;
+}
+
+.form__field--name,
+.form__field--phone {
+  width: 180px;
+}
+
+.form__field--email {
+  margin-bottom: 24px;
+}
+
+.form__field--text {
+  margin-bottom: 29px;
+}
+
+.form__button {
+  display: block;
+  margin-left: 102px;
+  padding: 0 45px 10px 47px;
+  text-align: center;
+  font-family: $font-header;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.4px;
+  color: $white-color;
+  background-color: $black-color;
+  border: none;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 3px rgba(0, 0, 0, 0.3);
+  }
+}
