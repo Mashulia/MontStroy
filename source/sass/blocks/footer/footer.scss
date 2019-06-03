@@ -1,4 +1,84 @@
 .footer {
+  padding-top: 65px;
+  padding-bottom: 45px;
   position: relative;
+  color: $white-color;
   background-color: $black-color;
+
+  &__wrapper-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 175px;
+  }
+
+  &__social,
+  &__contacts {
+    width: 18%;
+  }
+
+  & .container {
+    padding-right: 0;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 43px;
+  width: 141px;
+  height: 60px;
+}
+
+.footer__name {
+  @include reset-indents();
+  margin-bottom: 55px;
+  font-size: 16px;
+  line-height: 38px;
+}
+
+.footer__contacts {
+  margin-top: -5px;
+  padding-left: 28px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.footer__address {
+  margin-bottom: 40px;
+  font-style: normal;
+}
+
+.footer__mail {
+  display: block;
+  margin-bottom: 32px;
+  font-weight: 700;
+  color: $white-color;
+}
+
+.footer__phone {
+  @include reset-indents();
+  display: flex;
+  flex-direction: column;
+
+  & a {
+    color: $white-color;
+    font-weight: 700;
+  }
+
+  & span {
+    margin-top: -1px;
+    font-size: 13px;
+    line-height: normal;
+    opacity: 0.6;
+  }
+}
+
+.footer__copyrights {
+  font-size: 10px;
+  line-height: 25px;
+  letter-spacing: 0.4px;
+  opacity: 0.25;
+  text-align: center;
+}
+
+.footer__copyrights-text {
+  @include reset-indents();
 }
