@@ -45,6 +45,7 @@
   width: 50%;
   background-color: $white-color;
   border: none;
+  cursor: pointer;
 
   &::after {
     content: "";
