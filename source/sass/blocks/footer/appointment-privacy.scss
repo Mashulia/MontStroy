@@ -3,12 +3,13 @@
   font-size: 12px;
   line-height: 18px;
   text-align: center;
+  color: $black-color;
   opacity: 0.5;
 
   &__link {
     display: block;
-    margin-left: 120px;
-    margin-right: 85px;
+    margin: 0 auto;
+    width: 200px;
     padding-bottom: 2px;
     font: inherit;
     color: $black-color;
@@ -19,4 +20,27 @@
 .appointment-privacy__text {
   @include reset-indents();
   padding-left: 30px;
+}
+
+@media (max-width: $desktop-width) {
+  .appointment-privacy {
+    margin-bottom: 26px;
+    font-size: 10px;
+    line-height: 12px;
+
+    &__link {
+      width: 160px;
+      padding-bottom: 2px;
+    }
+  }
+
+  .appointment-privacy__text {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .appointment-privacy {
+    margin-bottom: 29px;
+  }
 }

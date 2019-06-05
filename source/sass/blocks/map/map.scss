@@ -1,6 +1,13 @@
-.map {
+.map__wrapper {
+  @include reset-indents();
   position: relative;
   height: 807px;
+  border-bottom: 2px solid $main-color;
+  overflow: hidden;
+}
+
+.map__title {
+  display: none;
 }
 
 .map__iframe,
@@ -14,12 +21,37 @@
 .map__image {
   @include reset-indents();
   z-index: 5;
-  overflow: hidden;
 }
 
 .map__iframe {
   z-index: 10;
-  height: 807px;
+  height: 805px;
   border: none;
 }
 
+@media (max-width: $desktop-width) {
+  .map__wrapper {
+    height: 350px;
+  }
+
+  .map__iframe {
+    height: 348px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .map__wrapper {
+    height: 200px;
+  }
+
+  .map__title {
+    display: block;
+    padding: 0 6%;
+    margin-bottom: 20px;
+  }
+
+  .map__iframe {
+    z-index: 10;
+    height: 198px;
+  }
+}
