@@ -3,15 +3,15 @@
   z-index: 100;
   top: -185px;
   left: 50%;
-  margin-left: -290px;
+  margin-left: -288px;
   width: 580px;
-  padding: 43px 103px 35px 77px;
+  padding: 43px 103px 35px 72px;
   background-color: $white-color;
 }
 
 .appointment__title {
   @include reset-indents();
-  margin-left: 75px;
+  margin-left: 78px;
   margin-bottom: 20px;
   font-family: $font-header;
   font-size: 25px;

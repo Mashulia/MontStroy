@@ -105,6 +105,8 @@
 
   .services-item__list {
     background-color: $services-item-color;
+    overflow: auto;
+    height: 285px;
 
     &--hidden {
       display: none;
@@ -175,7 +177,7 @@
 
     &--active {
       position: static;
-      padding: 16px 21px;
+      padding: 16px 6%;
       background-color: #e8e8e8;
       font-size: 16px;
       letter-spacing: 1.5px;
@@ -199,7 +201,7 @@
   }
 
   .services-item__link a {
-    padding: 13px 6.4% 11px;
+    padding: 13px 20px 11px;
     padding-right: 9.2%;
     font: inherit;
     font-size: 12px;

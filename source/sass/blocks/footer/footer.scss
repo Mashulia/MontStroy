@@ -9,8 +9,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 auto;
-    width: 1180px;
+    margin: 0 12.8%;
+
+    width: 1187px;
     margin-bottom: 175px;
   }
 
@@ -31,11 +32,12 @@
   margin-bottom: 55px;
   font-size: 16px;
   line-height: 38px;
+  letter-spacing: -0.1px;
 }
 
 .footer__contacts {
-  margin-top: -5px;
-  padding-left: 28px;
+  margin-top: -7px;
+  padding-left: 26px;
   font-size: 16px;
   line-height: 28px;
 
@@ -49,7 +51,7 @@
 .footer__phone::before {
   content: "";
   position: absolute;
-  top: 2px;
+  top: 5px;
   left: -29px;
   opacity: 0.5;
   background-repeat: no-repeat;
@@ -73,6 +75,7 @@
   display: block;
   margin-bottom: 32px;
   font-weight: 700;
+  letter-spacing: 0.3px;
   color: $white-color;
 
   &::before {
@@ -90,6 +93,7 @@
   flex-direction: column;
 
   &::before {
+    top: 7px;
     width: 16px;
     height: 11px;
     background-image: url("../../../img/phone.svg");

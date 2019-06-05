@@ -1,5 +1,6 @@
-.features .container {
+.features.container {
   padding: 0;
+  padding-left: 10px;
 }
 
 .features__list {
@@ -92,6 +93,11 @@
       display: none;
     }
   }
+
+  .features.container {
+    padding: 0 2.5%;
+  }
+
 
   .features-list {
     position: relative;
