@@ -13,12 +13,26 @@
 
 .footer-social__item {
   width: 33%;
+
+  &--fb:hover .footer-social__link--hover,
+  &--fb:focus .footer-social__link--hover {
+    display: block;
+  }
+
+  &--fb:hover .footer-social__link--active,
+  &--fb:focus .footer-social__link--active {
+    display: none;
+  }
 }
 
 .footer-social__link {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &--hover {
+    display: none;
+  }
 }
 
 .footer-social__icon {
@@ -46,8 +60,25 @@
 
     &:hover,
     &:focus {
-      color: $white-color;
+      display: none;
     }
+
+    &:hover .footer-social__icon--hover,
+    &:focus .footer-social__icon--hover {
+      display: block;
+    }
+  }
+
+  .footer-social__item--fb {
+    position: relative;
+  }
+
+  .footer-social__item--fb .footer-social__link--active,
+  .footer-social__item--fb .footer-social__link--hover  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 

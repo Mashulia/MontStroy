@@ -5,13 +5,13 @@
   left: 50%;
   margin-left: -288px;
   width: 580px;
-  padding: 43px 103px 35px 72px;
+  padding: 43px 103px 35px 74px;
   background-color: $white-color;
 }
 
 .appointment__title {
   @include reset-indents();
-  margin-left: 78px;
+  padding-left: 35px;
   margin-bottom: 20px;
   font-family: $font-header;
   font-size: 25px;
@@ -19,19 +19,20 @@
   letter-spacing: 1px;
   font-weight: 900;
   text-transform: uppercase;
+  text-align: center;
   color: $black-color;
 }
 
 @media (max-width: $desktop-width) {
   .appointment {
     top: -120px;
-    left: 46.3%;
+    left: 46%;
     width: 413px;
     padding: 32px 51px 30px;
   }
 
   .appointment__title {
-    margin-left: 54px;
+    padding-left: 0;
     margin-bottom: 10px;
     font-size: 18px;
     line-height: 35px;
