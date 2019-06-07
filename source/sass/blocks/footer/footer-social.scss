@@ -13,26 +13,12 @@
 
 .footer-social__item {
   width: 33%;
-
-  &--fb:hover .footer-social__link--hover,
-  &--fb:focus .footer-social__link--hover {
-    display: block;
-  }
-
-  &--fb:hover .footer-social__link--active,
-  &--fb:focus .footer-social__link--active {
-    display: none;
-  }
 }
 
 .footer-social__link {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  &--hover {
-    display: none;
-  }
 }
 
 .footer-social__icon {
@@ -56,16 +42,12 @@
   &--fb {
     width: 14px;
     height: 26px;
+    opacity: 0.5;
 
 
     &:hover,
     &:focus {
-      display: none;
-    }
-
-    &:hover .footer-social__icon--hover,
-    &:focus .footer-social__icon--hover {
-      display: block;
+      opacity: 1;
     }
   }
 
