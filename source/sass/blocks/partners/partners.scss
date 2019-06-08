@@ -269,11 +269,12 @@
     @include item-checked-mobile();
   }
 
-  .features__input--3:checked ~ .features__wrapper .features__item--shield {
+  .partners__input--3:checked ~ .partners__wrapper .partners__item--shield {
     @include item-checked-mobile();
   }
 
-  .features__input--4:checked ~ .features__wrapper .features__item--warm {
+  .partners__input--4:checked ~ .partners__wrapper .partners__item--warm {
     @include item-checked-mobile();
+    left: 265px;
   }
 }

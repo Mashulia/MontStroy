@@ -12,7 +12,7 @@
     margin: 0 auto;
     padding-left: 12px;
     width: 1190px;
-    margin-bottom: 175px;
+    margin-bottom: 173px;
   }
 
   &__social,
@@ -56,6 +56,7 @@
   opacity: 0.5;
   background-repeat: no-repeat;
   background-position: 0 0;
+  fill: $main-color;
 }
 
 .footer__address {
@@ -140,9 +141,6 @@
       margin: 0 auto;
       padding-left: 0;
       width: 640px;
-      // width: 100%;
-      // margin: 0 8.3%;
-      // min-width: 640px;
       margin-bottom: 20px;
     }
 
@@ -193,7 +191,7 @@
   .footer__wrapper-top {
     padding: 0;
     margin: 0;
-    min-width: 320px;
+    width: 100%;
     margin-bottom: 13px;
   }
 
@@ -238,6 +236,7 @@
   .footer__contacts--mobile .footer__phone::before {
     top: 7px;
     left: -32px;
+    fill: $white-color;
   }
 
   .footer__address {
@@ -331,5 +330,11 @@
     line-height: 14px;
     letter-spacing: 0.6px;
     opacity: 0.33;
+  }
+
+  .footer__contacts--mobile .footer__address::before,
+  .footer__contacts--mobile .footer__mail::before,
+  .footer__contacts--mobile .footer__phone::before {
+    top: 9px;
   }
 }

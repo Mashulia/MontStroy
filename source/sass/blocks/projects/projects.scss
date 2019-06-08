@@ -8,10 +8,12 @@
 
 .projects__image {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .projects__list {
@@ -30,6 +32,7 @@
   margin-right: 5px;
   margin-bottom: 3px;
   background-color: $black-color;
+  overflow: hidden;
 
   &:nth-child(4n),
   &:last-child {
