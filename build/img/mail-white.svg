@@ -27,20 +27,5 @@
 
 
 <?xpacket end="w"?></metadata>
-<defs>
-    <style>
-      .cls-1 {
-        fill: #666;
-        fill-rule: evenodd;
-        opacity: 0.5;
-        filter: url(#filter);
-      }
-    </style>
-    <filter id="filter" x="20" y="3854.44" width="16" height="10.97" filterUnits="userSpaceOnUse">
-      <feFlood result="flood" flood-color="#fff"/>
-      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
-      <feBlend result="blend" in2="SourceGraphic"/>
-    </filter>
-  </defs>
   <path id="иконка_письмо" data-name="иконка письмо" class="cls-1" d="M34,3865.42a1.9,1.9,0,0,0,1.993-1.79v-7.38a1.907,1.907,0,0,0-1.993-1.8H21.993a1.909,1.909,0,0,0-1.993,1.8v7.38a1.906,1.906,0,0,0,1.993,1.79H34Zm-11.963-8.47a0.418,0.418,0,0,1-.056-0.63,0.546,0.546,0,0,1,.692-0.05L28,3860.34l5.327-4.06a0.523,0.523,0,0,1,.692.05,0.411,0.411,0,0,1-.056.62l-3.8,2.9,3.818,3.23a0.417,0.417,0,0,1,.02.63,0.527,0.527,0,0,1-.692.02l-3.9-3.3-1.089.83a0.55,0.55,0,0,1-.632,0l-1.089-.83-3.9,3.3a0.527,0.527,0,0,1-.693-0.02,0.42,0.42,0,0,1,.02-0.63l3.818-3.23Z" transform="translate(-20 -3854.44)"/>
 </svg>

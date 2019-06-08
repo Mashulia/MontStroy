@@ -1,11 +1,11 @@
 .footer {
   padding-top: 65px;
   padding-bottom: 45px;
-  position: relative;
   color: $white-color;
   background-color: $black-color;
 
   &__wrapper-top {
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -44,31 +44,24 @@
   &--mobile {
     display: none;
   }
+
+  & svg {
+    position: absolute;
+    top: 6px;
+    left: -27px;
+    fill: #00ceb8;
+  }
 }
 
-.footer__address::before,
-.footer__mail::before,
-.footer__phone::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: -29px;
-  opacity: 0.5;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  fill: $main-color;
+.footer__address,
+.footer__mail,
+.footer__phone {
+  position: relative;
 }
 
 .footer__address {
-  position: relative;
   margin-bottom: 40px;
   font-style: normal;
-
-  &::before {
-    width: 13px;
-    height: 16px;
-    background-image: url("../../../img/location.svg");
-  }
 }
 
 .footer__mail {
@@ -78,28 +71,12 @@
   font-weight: 700;
   letter-spacing: 0.3px;
   color: $white-color;
-
-  &::before {
-    top: 8px;
-    width: 16px;
-    height: 11px;
-    background-image: url("../../../img/mail.svg");
-  }
 }
 
 .footer__phone {
-  position: relative;
-
   @include reset-indents();
   display: flex;
   flex-direction: column;
-
-  &::before {
-    top: 7px;
-    width: 16px;
-    height: 11px;
-    background-image: url("../../../img/phone.svg");
-  }
 
   & a {
     color: $white-color;
@@ -139,8 +116,8 @@
 
     &__wrapper-top {
       margin: 0 auto;
-      padding-left: 0;
-      width: 640px;
+      padding: 0 8.3%;
+      width: 100%;
       margin-bottom: 20px;
     }
 
@@ -151,6 +128,11 @@
       margin-left: 70.5%;
       font-size: 14px;
       line-height: 28px;
+
+      & svg {
+        top: 7px;
+        left: -29px;
+      }
     }
 
     &__social {
@@ -217,24 +199,14 @@
       order: 1;
       background-color: #1a1a1a;
     }
+
+    & svg {
+      top: 4px;
+    }
   }
 
-  .footer__address::before,
-  .footer__mail::before,
-  .footer__phone::before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: -29px;
-    opacity: 1;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
-  .footer__contacts--mobile .footer__address::before,
-  .footer__contacts--mobile .footer__mail::before,
-  .footer__contacts--mobile .footer__phone::before {
-    top: 7px;
+  .footer__contacts--mobile svg {
+    top: 8px;
     left: -32px;
     fill: $white-color;
   }
@@ -242,21 +214,11 @@
   .footer__address {
     position: relative;
     margin-bottom: 7px;
-
-    &::before {
-      width: 13px;
-      height: 16px;
-      background-image: url("../../../img/location.svg");
-    }
   }
 
   .footer__contacts--mobile .footer__address {
     position: relative;
     margin-bottom: 14px;
-
-    &::before {
-      background-image: url("../../../img/location-white.svg");
-    }
   }
 
   .footer__mail {
@@ -264,21 +226,11 @@
     display: block;
     margin-bottom: 11px;
     font-weight: 400;
-
-    &::before {
-      width: 16px;
-      height: 11px;
-      background-image: url("../../../img/mail.svg");
-    }
   }
 
   .footer__contacts--mobile .footer__mail {
     position: relative;
     margin-bottom: 14px;
-
-    &::before {
-      background-image: url("../../../img/mail-white.svg");
-    }
   }
 
   .footer__phone {
@@ -291,12 +243,6 @@
     & span {
       margin-top: 3px;
     }
-
-    &::before {
-      width: 13px;
-      height: 12px;
-      background-image: url("../../../img/phone.svg");
-    }
   }
 
   .footer__contacts--mobile .footer__phone {
@@ -304,12 +250,6 @@
 
     & span {
       margin-top: 0;
-    }
-
-    &::before {
-      width: 13px;
-      height: 12px;
-      background-image: url("../../../img/phone-white.svg");
     }
   }
 
@@ -330,11 +270,5 @@
     line-height: 14px;
     letter-spacing: 0.6px;
     opacity: 0.33;
-  }
-
-  .footer__contacts--mobile .footer__address::before,
-  .footer__contacts--mobile .footer__mail::before,
-  .footer__contacts--mobile .footer__phone::before {
-    top: 9px;
   }
 }

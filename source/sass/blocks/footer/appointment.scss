@@ -1,9 +1,9 @@
 .appointment {
   position: absolute;
   z-index: 100;
-  top: -185px;
+  top: -250px;
   left: 50%;
-  margin-left: -288px;
+  transform: translateX(-50%);
   width: 580px;
   padding: 43px 103px 35px 74px;
   background-color: $white-color;
@@ -12,7 +12,7 @@
 .appointment__title {
   @include reset-indents();
   padding-left: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   font-family: $font-header;
   font-size: 25px;
   line-height: 50px;
@@ -25,8 +25,9 @@
 
 @media (max-width: $desktop-width) {
   .appointment {
-    top: -120px;
-    left: 46%;
+    top: -150px;
+    left: 8.3%;
+    transform: none;
     width: 413px;
     padding: 32px 51px 30px;
   }
