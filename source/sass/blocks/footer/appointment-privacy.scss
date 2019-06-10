@@ -17,6 +17,11 @@
     font: inherit;
     color: $black-color;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
   }
 }
 
