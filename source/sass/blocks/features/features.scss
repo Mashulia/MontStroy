@@ -36,24 +36,22 @@
   opacity: 0.7;
   fill: $white-color;
   left: 50%;
+  transform: translateX(-50%);
 
   &--guarantee {
     top: 2px;
-    margin-left: -31px;
     width: 62px;
     height: 64px;
   }
 
   &--responsibility {
     top: 17px;
-    margin-left: -37px;
     width: 74px;
     height: 49px;
   }
 
   &--base {
     top: -3px;
-    margin-left: -35px;
     width: 70px;
     height: 69px;
   }
@@ -243,7 +241,6 @@
       top: 41px;
       width: 89px;
       height: 59px;
-      margin-left: -45px;
     }
 
     &--base {
